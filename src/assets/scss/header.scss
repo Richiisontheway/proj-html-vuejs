@@ -37,8 +37,20 @@ header{
     }
 }
 .home{
-    border-bottom: 10PX SOLID rgba($color: #000000, $alpha: 1.0);
+    border-bottom: 10PX SOLID rgba($color: pink, $alpha: 0.7);
 }
 .pages{
     border-bottom: 10px solid rgba($color: #E1C0B0, $alpha: 0.5);
+}
+.portfolio{
+    border-bottom: 10px solid rgba($color: green, $alpha: 0.2);
+}
+.blog{
+    border-bottom: 10px solid rgba($color: violet, $alpha: 0.2);
+}
+.shop{
+    border-bottom: 10px solid rgba($color: orange, $alpha: 0.2);
+}
+.element{
+    border-bottom: 10px solid rgba($color: orange, $alpha: 0.5);
 }

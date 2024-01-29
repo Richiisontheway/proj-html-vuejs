@@ -46,7 +46,7 @@ export default {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="element">
                             ELEMENTS
                         </a>
                     </li>
@@ -64,4 +64,5 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/scss/header.scss" as *;
 @import "../assets/scss/partials/reset";
+
 </style>
