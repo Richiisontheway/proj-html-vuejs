@@ -20,10 +20,13 @@ export default {
             </div>
             <div class="list-container">
                 <ul>
-                    <li>
+                    <li class="illustration--dropdown">
                         <a href="#" class="home">
                             HOME
                         </a>
+                        <div class="illustration--dropdown_content">
+                            <a href="#">cia</a>
+                        </div>
                     </li>
                     <li>
                         <a href="#" class="pages">
