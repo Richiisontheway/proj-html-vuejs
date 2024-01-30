@@ -1,0 +1,56 @@
+@use "partials/variables.scss" as *;
+@use "partials/mixins.scss" as *;
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+
+        .list-container{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                list-style: none;
+                margin-bottom: 0px;
+    
+                li{
+                    margin: 0 40px;
+    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        @include border-special;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.home{
+    border-bottom: 10PX SOLID rgba($color: pink, $alpha: 0.7);
+}
+.pages{
+    border-bottom: 10px solid rgba($color: #E1C0B0, $alpha: 0.5);
+}
+.portfolio{
+    border-bottom: 10px solid rgba($color: green, $alpha: 0.2);
+}
+.blog{
+    border-bottom: 10px solid rgba($color: violet, $alpha: 0.2);
+}
+.shop{
+    border-bottom: 10px solid rgba($color: orange, $alpha: 0.2);
+}
+.element{
+    border-bottom: 10px solid rgba($color: orange, $alpha: 0.5);
+}

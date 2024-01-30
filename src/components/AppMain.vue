@@ -1,22 +1,28 @@
 <script>
 import { store } from '../store';
+import Jumbotron from './Jumbotron.vue';
+import Cards from './Cards.vue';
+import Card from './Card.vue';
 export default {
-    data() {
-        return {
-            store
-        };
-    },
-    methods: {
-
-    }
-}
+  components: {
+    Jumbotron,
+    Cards,
+    Card,
+  },
+  data() {
+    return {
+      store,
+    };
+  },
+  methods: {},
+};
 </script>
 
 <template>
-    <main>
-        MAIN
-    </main>
+  <main>
+    <Jumbotron />
+    <Cards />
+  </main>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
