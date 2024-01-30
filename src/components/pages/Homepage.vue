@@ -23,12 +23,10 @@ export default {
 </script>
 
 <template>
-  <main>
-    <Jumbotron />
-    <Cards />
-    <WorkingProcess />
-    <Contacts />
-  </main>
+  <Jumbotron />
+  <Cards />
+  <WorkingProcess />
+  <Contacts />
 </template>
 
 <style lang="scss" scoped></style>
