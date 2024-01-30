@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Homepage from './components/pages/Homepage.vue';
-<<<<<<< HEAD
 import ourTeam from './components/pages/ourTeam.vue'
-=======
-import page2 from './components/pages/page2.vue'
->>>>>>> 4258562feb86ccdb16f92c249187e130f8d9fce7
+import  page2  from './components/pages/page2.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -14,15 +11,14 @@ const router = createRouter({
       component: Homepage,
     },
     {
-<<<<<<< HEAD
       path:'/ourTeam',
       name:'ourTeam',
       component: ourTeam,
-=======
+    },
+    {
       path: '/offer',
       name: 'main2',
       component: page2,
->>>>>>> 4258562feb86ccdb16f92c249187e130f8d9fce7
     },
   ],
 });
