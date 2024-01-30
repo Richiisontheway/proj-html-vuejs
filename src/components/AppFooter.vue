@@ -1,5 +1,6 @@
 <script>
 import { store } from '../store';
+
 export default {
   data() {
     return {
@@ -21,17 +22,17 @@ export default {
                 </div>
 
                 <div>
-                    <span class="list" @mouseover="underline">maree@qodeinteractive.com</span>
+                    <div class="list" @mouseover="underline">maree@qodeinteractive.com</div>
                     <div class="list" @mouseover="underline">+44645 321 789</div>
                 </div>
 
                 <div>
-                    <span class="list" @mouseover="underline">Avenue d’Auderghem 10</span>
+                    <div class="list" @mouseover="underline">Avenue d’Auderghem 10</div>
                     <div class="list" @mouseover="underline">1040 Brussels, Belgium</div>
                 </div>
 
                 <div>
-                    <span>Stay in touch with us</span>
+                    <div class="over-icon" >Stay in touch with us</div>
                     <div class="icon">
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-pinterest-p"></i>
@@ -46,6 +47,8 @@ export default {
   </template>
   
   <style lang="scss" scoped>
+  @use '../assets/scss/partials/mixins.scss' as *;
+
   footer {
     border: 1px solid black;
     background-color: rgb(192, 225, 197);
@@ -72,10 +75,12 @@ export default {
   }
   
   .list:hover {
-    text-decoration: underline;
-    text-decoration-color: pink;
+    @include border-special;
     text-align: left;
+    border-bottom: 10px solid pink;
   }
+
+
   
   .down-logo {
     text-align: center;
@@ -97,6 +102,10 @@ export default {
     display: flex;
     justify-content: space-around;
   }
+
+    .over-icon{
+        margin-bottom: 10px;
+    }
   
   i:hover {
     color: white;
