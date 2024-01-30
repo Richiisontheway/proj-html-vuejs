@@ -99,10 +99,11 @@ export default {
     .graph_container {
       display: flex;
       width: 100%;
-      gap: 9rem;
+      gap: 1rem;
       background-image: url(../../public/svg/svg-3.svg);
       background-repeat: no-repeat;
       background-position: top;
+
       .process-container {
         display: flex;
         flex-direction: column;
@@ -129,6 +130,7 @@ export default {
           line-height: 1.238em;
           font-family: Muli, sans-serif;
           font-weight: 400;
+          margin-bottom: 12px;
         }
       }
     }

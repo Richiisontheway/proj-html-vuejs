@@ -1,18 +1,7 @@
 <script>
-import { store } from '../store';
-import Jumbotron from './Jumbotron.vue';
-import Cards from './Cards.vue';
-import Card from './Card.vue';
-import WorkingProcess from './WorkingProcess.vue';
-import Contacts from './Contacts.vue';
+import { store } from '../store.js';
 export default {
-  components: {
-    Jumbotron,
-    Cards,
-    Card,
-    WorkingProcess,
-    Contacts,
-  },
+  components: {},
   data() {
     return {
       store,
@@ -25,10 +14,6 @@ export default {
 <template>
   <main>
     <router-view></router-view>
-    <Jumbotron />
-    <Cards />
-    <WorkingProcess />
-    <Contacts />
   </main>
 </template>
 
