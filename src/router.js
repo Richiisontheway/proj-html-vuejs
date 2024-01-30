@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Homepage from './components/pages/Homepage.vue';
+import page2 from './components/pages/page2.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -7,6 +8,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Homepage,
+    },
+    {
+      path: '/offer',
+      name: 'main2',
+      component: page2,
     },
   ],
 });

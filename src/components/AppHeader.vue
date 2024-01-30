@@ -31,12 +31,12 @@ export default {
                             HOME
                         </a>
                         <div class="illustration--dropdown_content">
-                            <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
-                                {{ homeKey.page }}
-                            </a>
-                            
+                                <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
+                                    <div>
+                                        {{ homeKey.page }}
+                                    </div>
+                                </a>
                         </div>
-
                     </li>
                     <li class="illustration--dropdown">
 
@@ -50,37 +50,37 @@ export default {
                         </div>
 
                     </li>
-                    <li class="illustration--dropdown">
+                    <li class="illustration--dropdown_special">
 
-                        <a href="#" class="portfolio">
+                        <a href="#" class="illustration--portfolio">
                             PORTFOLIO
                         </a>
-                        <div id="portfolio">
-                            <div class="d-inline-block ">
+                        <div class="special_content">
+                            <div class="mx-3">
                                 <h3>
-                                {{ this.store.portfolio_nav[0].title }}
+                                    {{ this.store.portfolio_nav[0].title }}
                                 </h3>
                                 <a href="#" class="illustration--portfolio" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
                                     {{ portfolioKey.page }}
                                 </a>
                             </div>
-                            <div class="d-inline-block">
+                            <div class="mx-3">
                                 <h3>
-                                {{ this.store.portfolio_nav[1].title }}
+                                    {{ this.store.portfolio_nav[1].title }}
                                 </h3>
                                 <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,d) in store.portfolio_nav[1].pages" :key="d">
                                     {{ portfolioKey.page }}
                                 </a>
                             </div>
-                            <div class="d-inline-block ">
+                            <div class="mx-3">
                                 <h3>
-                                {{ this.store.portfolio_nav[2].title }}
+                                    {{ this.store.portfolio_nav[2].title }}
                                 </h3>
                                 <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,e) in store.portfolio_nav[2].pages" :key="e">
                                     {{ portfolioKey.page }}
                                 </a>
                             </div>
-                            <div class="d-inline-block ">
+                            <div class="mx-3">
                                 <h3>
                                 {{ this.store.portfolio_nav[3].title }}
                                 </h3>
@@ -89,22 +89,65 @@ export default {
                                 </a>
                             </div>
                         </div>
-
                     </li>
-                    <li>
-                        <a href="#" class="blog">
+                    <li class="illustration--dropdown">
+                        <a href="#" class="illustration--blog">
                             BLOG
                         </a>
+                        <div class="illustration--dropdown_content">
+                            <a href="#" class="illustration--blog" v-for="(blogKey,f) in store.blog_nav" :key="f">
+                                {{ blogKey.page }}
+                            </a>
+                        </div>
                     </li>
-                    <li>
-                        <a href="#" class="shop">
+                    <li class="illustration--dropdown">
+                        <a href="#" class="illustration--shop">
                             SHOP
                         </a>
+                        <div class="illustration--dropdown_content">
+                            <a href="#" class="illustration--shop" v-for="(shopKey,g) in store.shop_nav" :key="g">
+                                {{ shopKey.page }}
+                            </a>
+                        </div>
                     </li>
-                    <li>
+                    <li class="illustration--dropdown_special">
                         <a href="#" class="element">
                             ELEMENTS
                         </a>
+                        <div class="special_content_element">
+                            <div class="mx-3">
+                                <h3>
+                                    {{ this.store.element_nav[0].title }}
+                                </h3>
+                                <a href="#" class="illustration--shop" v-for="(elementKey,h) in store.element_nav[0].pages" :key="h">
+                                    {{ elementKey.page }}
+                                </a>
+                            </div>
+                            <div class="mx-3">
+                                <h3>
+                                    {{ this.store.element_nav[1].title }}
+                                </h3>
+                                <a href="#" class="illustration--shop" v-for="(elementKey,h) in store.element_nav[1].pages" :key="h">
+                                    {{ elementKey.page }}
+                                </a>
+                            </div>
+                            <div class="mx-3">
+                                <h3>
+                                    {{ this.store.element_nav[2].title }}
+                                </h3>
+                                <a href="#" class="illustration--shop" v-for="(elementKey,h) in store.element_nav[2].pages" :key="h">
+                                    {{ elementKey.page }}
+                                </a>
+                            </div>
+                            <div class="mx-3">
+                                <h3>
+                                    {{ this.store.element_nav[3].title }}
+                                </h3>
+                                <a href="#" class="illustration--shop" v-for="(elementKey,h) in store.element_nav[3].pages" :key="h">
+                                    {{ elementKey.page }}
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
