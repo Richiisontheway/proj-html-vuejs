@@ -22,6 +22,7 @@ export default {
 
 <template>
   <main>
+    <router-view></router-view>
     <Jumbotron />
     <Cards />
     <WorkingProcess />

@@ -85,24 +85,70 @@ export const store = reactive({
                 },
             ]
         },{
-            title:'Types',
+            title:'Layout',
             pages:[
                 {
-                    page:'Standard'
+                    page:'Two Columns'
                 },{
-                    page:'Gallery'
+                    page:'Three Columns'
                 },{
-                    page:'Gallery Joined'
+                    page:'Three Columns Wide'
+                },{
+                    page:'Four Columns'
+                },{
+                    page:'Four Columns Wide'
+                },{
+                    page:'Five Columns'
+                },{
+                    page:'Five Columns Wide'
+                },{
+                    page:'Six Columns Wide'
+                },
+            ]
+        },{
+            title:'Hover Tipes',
+            pages:[
+                {
+                    page:'Slide In'
+                },{
+                    page:'Float'
+                },{
+                    page:'Overlay'
+                },{
+                    page:'Zoom'
+                },{
+                    page:'Shader'
+                },{
+                    page:'Clip Image'
+                },{
+                    page:'Singles'
+                },
+            ]
+        },{
+            title:'Singles',
+            pages:[
+                {
+                    page:'Split Screen'
+                },{
+                    page:'Full Width Slider'
+                },{
+                    page:'Wide Slider'
+                },{
+                    page:'Big Slider'
+                },{
+                    page:'Small Slider'
+                },{
+                    page:'Big Image'
+                },{
+                    page:'Big Images'
+                },{
+                    page:'Small Images'
+                },{
+                    page:'Big Gallery'
+                },{
+                    page:'Small Gallery'
                 },{
                     page:'Masonry'
-                },{
-                    page:'Masonry Joined'
-                },{
-                    page:'Pinterest'
-                },{
-                    page:'Scattered'
-                },{
-                    page:'Slider'
                 },
             ]
         },
