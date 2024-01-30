@@ -55,13 +55,39 @@ export default {
                         <a href="#" class="portfolio">
                             PORTFOLIO
                         </a>
-                        <div class="illustration--dropdown_content">
-                            <h3>
+                        <div id="portfolio">
+                            <div class="d-inline-block ">
+                                <h3>
                                 {{ this.store.portfolio_nav[0].title }}
-                            </h3>
-                            <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
-                                {{ portfolioKey.page }}
-                            </a>
+                                </h3>
+                                <a href="#" class="illustration--portfolio" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
+                            <div class="d-inline-block">
+                                <h3>
+                                {{ this.store.portfolio_nav[1].title }}
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,d) in store.portfolio_nav[1].pages" :key="d">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
+                            <div class="d-inline-block ">
+                                <h3>
+                                {{ this.store.portfolio_nav[2].title }}
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,e) in store.portfolio_nav[2].pages" :key="e">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
+                            <div class="d-inline-block ">
+                                <h3>
+                                {{ this.store.portfolio_nav[3].title }}
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,e) in store.portfolio_nav[3].pages" :key="e">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
                         </div>
 
                     </li>
