@@ -84,11 +84,17 @@ export default {
       </div>
 
       <div class="contenitore-dx">
+        <h1>Vibes loving intro</h1>
+        <p>No homero adolescens mei, eum cu decore reformidans, cum erant nonumy dictas ei. Ne vis congue gloriatur, vel eu doming philosophia. Qui quem munere ad, et agam copiosae nam. Ei reque verear periculis eam. Has commune constituam eu, ex vis.</p>
 
       </div>
 
 
 
+    </div>
+
+    <div class="carusel">
+          
     </div>
 
 
@@ -169,17 +175,31 @@ img{
   width: 100%;
   margin: 50px;
   margin-top: 100px;
+  display: flex;
 }
 .contenitore-sx{
   width: 50%;
+  margin: 20px;
   
 }
 .contenitore-dx{
   width: 50%;
+  text-align: center;
+  margin: 20px;
 }
 
 button{
   color: black;
   border-bottom: rgb(208, 70, 93);
 }
+
+.carusel{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
 </style>
+
+<!-- https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain
+https://th.bing.com/th/id/R.5df3def5983dcf991fe66343d24adea3?rik=aoCoVXeS5Rf5DA&pid=ImgRaw&r=0
+https://th.bing.com/th/id/R.881f91b8b073b0eb472b4afe0711fd29?rik=M9SuBfCfvy6qkg&pid=ImgRaw&r=0 -->
