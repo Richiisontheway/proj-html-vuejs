@@ -55,13 +55,31 @@ export default {
                         <a href="#" class="portfolio">
                             PORTFOLIO
                         </a>
-                        <div class="illustration--dropdown_content">
-                            <h3>
+                        <div class="illustration--dropdown_content d-flex ">
+                            <div>
+                                <h3>
                                 {{ this.store.portfolio_nav[0].title }}
-                            </h3>
-                            <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
-                                {{ portfolioKey.page }}
-                            </a>
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
+                            <div>
+                                <h3>
+                                {{ this.store.portfolio_nav[0].title }}
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
+                            <div>
+                                <h3>
+                                {{ this.store.portfolio_nav[0].title }}
+                                </h3>
+                                <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
+                                    {{ portfolioKey.page }}
+                                </a>
+                            </div>
                         </div>
 
                     </li>

@@ -84,6 +84,27 @@ export const store = reactive({
                     page:'Slider'
                 },
             ]
+        },{
+            title:'Types',
+            pages:[
+                {
+                    page:'Standard'
+                },{
+                    page:'Gallery'
+                },{
+                    page:'Gallery Joined'
+                },{
+                    page:'Masonry'
+                },{
+                    page:'Masonry Joined'
+                },{
+                    page:'Pinterest'
+                },{
+                    page:'Scattered'
+                },{
+                    page:'Slider'
+                },
+            ]
         },
     ]
     
