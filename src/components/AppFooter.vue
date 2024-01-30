@@ -50,7 +50,7 @@ export default {
   @use '../assets/scss/partials/mixins.scss' as *;
 
   footer {
-    border: 1px solid black;
+    
     background-color: rgb(192, 225, 197);
   }
   
