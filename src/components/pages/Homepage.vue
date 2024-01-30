@@ -5,6 +5,7 @@ import Cards from '../Cards.vue';
 import Card from '../Card.vue';
 import WorkingProcess from '../WorkingProcess.vue';
 import Contacts from '../Contacts.vue';
+import Articles from '../Articles.vue';
 export default {
   components: {
     Jumbotron,
@@ -12,6 +13,7 @@ export default {
     Card,
     WorkingProcess,
     Contacts,
+    Articles,
   },
   data() {
     return {
@@ -27,6 +29,7 @@ export default {
   <Cards />
   <WorkingProcess />
   <Contacts />
+  <Articles />
 </template>
 
 <style lang="scss" scoped></style>
