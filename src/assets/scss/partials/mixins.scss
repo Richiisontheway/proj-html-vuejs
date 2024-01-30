@@ -1,5 +1,6 @@
+//per creare la base del bordino dell'hover
 @mixin border-special{
     line-height: 0em;
     display: inline-block;
-    width: 120%;
+    //width: calc(100% + 5px)
 };

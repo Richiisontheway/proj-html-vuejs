@@ -14,7 +14,7 @@ header{
         justify-content: space-between;
         flex-grow: 1;
 
-        .list-container{
+        .illustration--list_container{
             display: flex;
             align-items: center;
             ul{
@@ -36,21 +36,46 @@ header{
         }
     }
 }
-.home{
-    border-bottom: 10PX SOLID rgba($color: pink, $alpha: 0.7);
+// Gestione link con hover
+ul{
+    :hover.illustration--home{
+        border-bottom: 10PX SOLID rgba($color: pink, $alpha: 0.7);
+    }
+    .illustration--pages{
+        border-bottom: 10px solid rgba($color: #ebebebf1, $alpha: 1);
+    }
+    :hover.illustration--pages_hover{
+        border-bottom: 10px solid rgba($color: #EBEBEB, $alpha: 1);
+    }
+    :hover.portfolio{
+        border-bottom: 10px solid rgba($color: green, $alpha: 0.2);
+    }
+    :hover.blog{
+        border-bottom: 10px solid rgba($color: violet, $alpha: 0.2);
+    }
+    :hover.shop{
+        border-bottom: 10px solid rgba($color: orange, $alpha: 0.2);
+    }
+    :hover.element{
+        border-bottom: 10px solid rgba($color: orange, $alpha: 0.2);
+    }
 }
-.pages{
-    border-bottom: 10px solid rgba($color: #E1C0B0, $alpha: 0.5);
-}
-.portfolio{
-    border-bottom: 10px solid rgba($color: green, $alpha: 0.2);
-}
-.blog{
-    border-bottom: 10px solid rgba($color: violet, $alpha: 0.2);
-}
-.shop{
-    border-bottom: 10px solid rgba($color: orange, $alpha: 0.2);
-}
-.element{
-    border-bottom: 10px solid rgba($color: orange, $alpha: 0.5);
+//Creazione del dropdown
+.illustration--dropdown{
+    position: relative;
+    display: inline-block;
+
+    .illustration--dropdown_content{
+        display: none;
+        position: absolute;
+        background-color: rgba($color: #FAF7F2, $alpha: 1);
+        min-width: 200px;
+        padding: 10px 15px;
+        z-index: 1;
+        
+    }   
+
+    &:hover .illustration--dropdown_content{
+        display: block;
+    }
 }
