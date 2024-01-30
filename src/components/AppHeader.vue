@@ -8,7 +8,7 @@ export default {
     },
     methods: {
         ciao(){
-            console.log(store.portfolio_nav[0].pages)
+            console.log(store.portfolio_nav[0].pages[0].page)
         }
     },
     mounted(){
@@ -59,7 +59,7 @@ export default {
                             <h3>
                                 {{ this.store.portfolio_nav[0].title }}
                             </h3>
-                            <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav" :key="c">
+                            <a href="#" class="illustration--pages_hover" v-for="(portfolioKey,c) in store.portfolio_nav[0].pages" :key="c">
                                 {{ portfolioKey.page }}
                             </a>
                         </div>
