@@ -4,14 +4,14 @@ import Jumbotron from './Jumbotron.vue';
 import Cards from './Cards.vue';
 import Card from './Card.vue';
 import WorkingProcess from './WorkingProcess.vue';
-import Contacts from './Contacts.vue';
+// import Contacts from './Contacts.vue';
 export default {
   components: {
     Jumbotron,
     Cards,
     Card,
     WorkingProcess,
-    Contacts,
+    // Contacts,
   },
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
     <Jumbotron />
     <Cards />
     <WorkingProcess />
-    <Contacts />
+    <!-- <Contacts /> -->
   </main>
 </template>
 
