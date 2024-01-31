@@ -172,7 +172,17 @@ export const store = reactive({
         },{
             page:'Shop Layout'
         },{
-            page:'Shop Pages'
+            page:'Shop Pages',
+            dropstart:[
+                {
+                    layout:'My accaunt'
+                },{
+                    layout:'Cart'
+                },{
+                    layout:'Checkout'
+                }
+
+            ]
         }
     ],
     element_nav:[
