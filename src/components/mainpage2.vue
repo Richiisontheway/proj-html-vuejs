@@ -21,7 +21,7 @@ export default {
 <template>
     <section>
         <div class="illustration--jumbotron">
-            <img src="../../public/img/h-2-background-1.jpg" alt="">
+            <!-- <img src="../../public/img/h-2-background-1.jpg" alt=""> -->
             <h2>
                 What we Offer
             </h2>
@@ -42,21 +42,12 @@ export default {
 @use '../assets/scss/main.scss' as *;
 .illustration--jumbotron{
     height: 300px;
-    position: relative;
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: 0;
-        position: absolute;
-    }
+    background-image: url(../../public/img/h-2-background-1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h2{
-        position: absolute;
-        top: 50%;
-        left: 40%;
-        right: 40%;
-        z-index: 1;
-        
+        color: black;
     }
 }
 </style>
