@@ -7,13 +7,13 @@ export default {
         };
     },
     methods: {
-        ciao(){
-            console.log(store.portfolio_nav[0].pages[0].page)
-        }
+        // ciao(){
+        //     console.log(store.portfolio_nav[0].pages[0].page)
+        // }
     },
-    mounted(){
-        this.ciao()
-    }
+    // mounted(){
+    //     this.ciao()
+    // }
 }
 </script>
 
@@ -32,9 +32,15 @@ export default {
                         </a>
                         <div class="illustration--dropdown_content">
                                 <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
-                                    <div>
+                                    
                                         {{ homeKey.page }}
-                                    </div>
+                                        <div v-if="(homeKey.page == 'Main Home')">
+                                            <!-- <router-link :to="{ name: 'user', params: { username: 'erina' }}">
+                                                user
+                                        </router-link> -->
+                                        </div>
+                                    
+                                    <!--  -->
                                 </a>
                         </div>
                     </li>
