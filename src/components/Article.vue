@@ -26,7 +26,7 @@ export default {
     </div>
 
     <div class="article_thumb overflow-hidden">
-      <img :src="`/img/${Image}.jpg`" alt="" />
+      <img class="image-article" :src="`/img/${Image}.jpg`" alt="" />
     </div>
 
     <h4 class="text-capitalize my-3">
@@ -78,7 +78,7 @@ export default {
       }
     }
   }
-  img {
+  .image-article {
     width: 100%;
     transition: all 0.5s;
 
