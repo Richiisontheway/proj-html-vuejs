@@ -94,7 +94,27 @@ export default {
     </div>
 
     <div class="carusel">
-          
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/photos/love-picture-id516005666?k=6&m=516005666&s=612x612&w=0&h=rtyUb3_TFsE0R8RMp80iwqpvnPaqBMQrhvz6Yt9NiHI=" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/R.85c5385ef153bc0809a4a622edb710f1?rik=5zsdeoIwWkzSdQ&riu=http%3a%2f%2febrevinil.com%2fmedia%2fcache%2fc1b74f490bdd4c0f0732f74756adb352.jpg&ehk=TcWrn2tPpukfRf3lU1jSHuB6y3ZtTQUN9zO%2b8xt%2bkHc%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.mfXhuGVj8Cf7SZyncSTjEwAAAA?rs=1&pid=ImgDetMain" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
 
 
@@ -194,10 +214,34 @@ button{
 }
 
 .carusel{
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: pink; 
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    color: black; 
+    
+  }
 }
+.carusel img {
+  height: 400px; 
+  width: 100%;
+}
+
+.carusel .carousel-item {
+  transition: transform 0.6s; 
+}
+
+
+.carusel .carousel-item.active {
+  transform: scale(1);
+}
+
 </style>
 
 <!-- https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain
