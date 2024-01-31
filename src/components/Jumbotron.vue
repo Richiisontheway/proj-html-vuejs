@@ -3,22 +3,21 @@ import { store } from '../store';
 export default {
   data() {
     return {
-      store,
       currentSlide: 0,
+      store,
       slides: [
         {
           title: 'Projects made with',
           italic: 'love',
           description:
             'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,consectetur, adipisci velit, sed quia non numquam eius modi.',
-          button: [
-            {
-              text: 'Read More',
-              link: 'https://maree.qodeinteractive.com/portfolio-item/enthusiasm-is-great/',
-            },
-          ],
-          image: [
-            'short-slider-rev-1-img-3',
+          button: {
+            text: 'Read More',
+            link: 'https://maree.qodeinteractive.com/portfolio-item/enthusiasm-is-great/',
+          },
+
+          images: [
+            'short-slider-rev-1-img-3.png',
             'short-slider-rev-1-img-2.png',
             'short-slider-rev-1-img-1.png',
             'short-slider-rev-1-img-7.png',
@@ -37,13 +36,12 @@ export default {
           italic: 'joy',
           description:
             'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,consectetur, adipisci velit, sed quia non numquam eius modi.',
-          button: [
-            {
-              text: 'Read More',
-              link: 'https://maree.qodeinteractive.com/portfolio-item/life-and-inspiration/',
-            },
-          ],
-          image: [
+          button: {
+            text: 'Read More',
+            link: 'https://maree.qodeinteractive.com/portfolio-item/life-and-inspiration/',
+          },
+
+          images: [
             'h-2-slider-img-11.png',
             'short-slider-rev-1-img-2.png',
             'short-slider-rev-1-img-8.png',
@@ -59,13 +57,12 @@ export default {
           italic: 'ends',
           description:
             'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,consectetur, adipisci velit, sed quia non numquam eius modi.',
-          button: [
-            {
-              text: 'Read More',
-              link: 'https://maree.qodeinteractive.com/portfolio-item/looking-to-expand-my-portfolio/',
-            },
-          ],
-          image: [
+          button: {
+            text: 'Read More',
+            link: 'https://maree.qodeinteractive.com/portfolio-item/looking-to-expand-my-portfolio/',
+          },
+
+          images: [
             'h-2-slider-img-15.png',
             'h-2-slider-img-16.png',
             'short-slider-rev-1-img-2.png',
@@ -148,7 +145,13 @@ export default {
             >
           </div>
           <div class="images_container carousel-item active">
-            <img :src="`/img/${slide.Image}.jpg`" class="image1" alt="..." />
+            <img
+              v-bind:src="slide.images"
+              v-for="image in images"
+              :key="image"
+              class="image1"
+              alt="..."
+            />
           </div>
         </div>
       </div>
@@ -158,7 +161,7 @@ export default {
       </button>
       <button class="carousel-control-next" type="button" @click="nextBtn">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Previous</span>
       </button>
     </div>
   </div>
