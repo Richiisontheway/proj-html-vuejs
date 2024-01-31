@@ -29,7 +29,7 @@ export default {
             'short-slider-rev-1-img-4.png',
           ],
 
-          class: 'first-slide',
+          class: 'firstslide',
         },
         {
           title: 'Our new folio full of',
@@ -50,7 +50,7 @@ export default {
             'h-2-slider-img-14.png',
           ],
 
-          class: 'second-slide',
+          class: 'secondslide',
         },
         {
           title: 'Devotion that never',
@@ -73,7 +73,7 @@ export default {
             'h-2-slider-img-17.png',
           ],
 
-          class: 'third-slide',
+          class: 'thirdslide',
         },
       ],
     };
@@ -146,10 +146,12 @@ export default {
           </div>
           <div class="images_container carousel-item active">
             <img
-              v-bind:src="slide.images"
-              v-for="image in images"
+              v-for="image in slide.images"
               :key="image"
-              class="image1"
+              v-bind:src="`/img/${image}`"
+              :class="{{"
+              slides.firstslide
+              }}
               alt="..."
             />
           </div>
