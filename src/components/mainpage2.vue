@@ -1,6 +1,8 @@
 <script>
 import { store } from '../store';
 import js_pulsanti_page2 from '../components/js_pulsanti_page2.vue'
+import email from '../components/email.vue'
+import Articles from './Articles.vue';
 export default {
     data() {
         return {
@@ -8,7 +10,9 @@ export default {
         };
     },
     components:{
-        js_pulsanti_page2
+        js_pulsanti_page2,
+        email,
+        Articles
     },
     methods: {},
 };
@@ -25,6 +29,12 @@ export default {
     </section>
     <section>
         <js_pulsanti_page2 />
+    </section>
+    <section>
+        <email />
+    </section>
+    <section>
+        <Articles />
     </section>
 </template>
 

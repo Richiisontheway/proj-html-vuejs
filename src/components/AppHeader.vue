@@ -109,7 +109,7 @@ export default {
                             <a href="#" class="illustration--shop w-100" v-for="(shopKey,g) in store.shop_nav" :key="g">
                                 {{ shopKey.page }}
                                 <ul v-if="(shopKey.page == 'Shop Pages')" class="illustration--shop d-block ">
-                                    <li v-for="(elem) in shopKey.page">
+                                    <li v-for="(elem) in shopKey.dropstart">
                                         {{ elem.dropstart }}
                                     </li>
                                 </ul>
