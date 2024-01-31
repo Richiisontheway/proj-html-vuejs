@@ -44,7 +44,7 @@ export default {
           images: [
             'h-2-slider-img-11.png',
             'short-slider-rev-1-img-2.png',
-            'short-slider-rev-1-img-8.png',
+            'short-slider-rev-1-img-6.png',
             'h-2-slider-img-12.png',
             'h-2-slider-img-13.png',
             'h-2-slider-img-14.png',
@@ -66,7 +66,7 @@ export default {
             'h-2-slider-img-15.png',
             'h-2-slider-img-16.png',
             'short-slider-rev-1-img-2.png',
-            'short-slider-rev-1-img-8.png',
+            'short-slider-rev-1-img-6.png',
             'h-2-slider-img-12.png',
             'h-2-slider-img-13.png',
             'h-2-slider-img-14.png',
@@ -108,7 +108,7 @@ export default {
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
-          class="active"
+          class="button_indicator active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -117,20 +117,22 @@ export default {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
+          class="button_indicator"
         ></button>
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
+          class="button_indicator"
         ></button>
       </div>
       <div class="slides">
         <div
-          class="carousel-inner d-flex"
+          class="carousel-inner"
           v-for="(slide, index) in slides"
           :key="index"
-          :class="currentSlide == index ? 'active' : ''"
+          :class="(currentSlide == index ? 'active ' : '') + slide.class"
         >
           <div class="text-container">
             <h1 class="title">
@@ -175,6 +177,7 @@ export default {
   //background-color: aqua;
 }
 .carousel-slide {
+  display: flex;
   widows: 90%;
   height: 100%;
   display: flex;
@@ -188,6 +191,9 @@ export default {
     .carousel-inner {
       display: none;
     }
+    .carousel-inner.active {
+      display: flex;
+    }
     .text-container {
       display: flex;
       justify-content: center;
@@ -195,7 +201,6 @@ export default {
       flex-direction: column;
       width: 50%;
       position: relative;
-      //border: 1px solid red;
       .title {
         font-size: 4.7rem;
         width: 70%;
@@ -214,7 +219,7 @@ export default {
       }
       .description {
         width: 80%;
-        font-size: 1.2rem;
+        font-size: 18px;
         color: gray;
         font-weight: 300;
         font-family: 'Mulish', sans-serif;
@@ -244,6 +249,12 @@ export default {
       }
     }
   }
+  .button_indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e1c0b0;
+  }
 
   .images_container {
     display: flex;
@@ -255,6 +266,9 @@ export default {
     img {
       object-fit: contain;
     }
+  }
+
+  .firstslide {
     .dimension1 {
       position: absolute;
       left: 93px;
@@ -324,6 +338,108 @@ export default {
       position: absolute;
       right: 156px;
       top: 116px;
+    }
+  }
+  .secondslide {
+    .dimension1 {
+      width: 590px;
+      height: 491px;
+      position: absolute;
+      top: 3px;
+      left: -48px;
+    }
+    .dimension2 {
+      width: 40px;
+      height: 41px;
+      position: absolute;
+      top: 119px;
+      left: -65px;
+    }
+    .dimension3 {
+      width: 40px;
+      height: 61px;
+      position: absolute;
+      top: 30px;
+      right: 229px;
+    }
+    .dimension4 {
+      width: 39px;
+      height: 38px;
+      position: absolute;
+      bottom: 98px;
+      left: -73px;
+    }
+    .dimension5 {
+      width: 40px;
+      height: 60px;
+      position: absolute;
+      bottom: 68px;
+      left: -2px;
+    }
+    .dimension6 {
+      width: 40px;
+      height: 60px;
+      position: absolute;
+      bottom: 42px;
+      right: 238px;
+    }
+  }
+  .thirdslide {
+    .dimension1 {
+      width: 300px;
+      height: 373px;
+      position: absolute;
+      top: 89px;
+      left: 23px;
+    }
+    .dimension2 {
+      width: 305px;
+      height: 481px;
+      position: absolute;
+      top: 23px;
+      left: 294px;
+    }
+    .dimension3 {
+      width: 40px;
+      height: 41px;
+      position: absolute;
+      top: 52px;
+      left: 23px;
+    }
+    .dimension4 {
+      width: 40px;
+      height: 123px;
+      position: absolute;
+      top: 47px;
+      right: 167px;
+    }
+    .dimension5 {
+      width: 39px;
+      height: 38px;
+      position: absolute;
+      bottom: 153px;
+      left: -43px;
+    }
+    .dimension6 {
+      width: 38px;
+      height: 58px;
+      position: absolute;
+      bottom: 50px;
+      left: 36px;
+    }
+    .dimension7 {
+      width: 40px;
+      height: 43px;
+      position: absolute;
+      top: 5px;
+      right: 196px;
+    }
+    .dimension8 {
+      width: 47px;
+      height: 71px;
+      position: absolute;
+      bottom: 49px;
+      right: 128px;
     }
   }
 }
