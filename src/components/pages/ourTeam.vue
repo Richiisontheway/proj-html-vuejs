@@ -93,28 +93,50 @@ export default {
 
     </div>
 
-    <div class="carusel">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="contenitore-carusel ">
+              <div class="carusel">
+                <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://media.istockphoto.com/photos/love-picture-id516005666?k=6&m=516005666&s=612x612&w=0&h=rtyUb3_TFsE0R8RMp80iwqpvnPaqBMQrhvz6Yt9NiHI=" class="d-block w-100" alt="">
+           <img src="https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain" alt="">
           </div>
           <div class="carousel-item">
-            <img src="https://th.bing.com/th/id/R.85c5385ef153bc0809a4a622edb710f1?rik=5zsdeoIwWkzSdQ&riu=http%3a%2f%2febrevinil.com%2fmedia%2fcache%2fc1b74f490bdd4c0f0732f74756adb352.jpg&ehk=TcWrn2tPpukfRf3lU1jSHuB6y3ZtTQUN9zO%2b8xt%2bkHc%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="">
+           <img src="https://th.bing.com/th/id/OIP.cVNthsSPB5wAGwuNN5hTvgHaFP?rs=1&pid=ImgDetMain" alt="">
           </div>
           <div class="carousel-item">
-            <img src="https://th.bing.com/th/id/OIP.mfXhuGVj8Cf7SZyncSTjEwAAAA?rs=1&pid=ImgDetMain" class="d-block w-100" alt="">
+            <img src="https://pianetabambini.it/wp-content/uploads/2013/12/Buon-Natale_15.jpg" alt="">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+            </div>   
+
+    </div>
+
+    
+
+
+    <div class="container-finale">
+
+      <div class="img-ds-ultimo">
+             <img src="https://th.bing.com/th/id/OIP.OQNKa-cNsOMJZ_jr5X_L6AHaEo?rs=1&pid=ImgDetMain" alt="">
+      </div>
+
+
+      <div class="design-carattetere-dx">
+            <h2>Character<br><b>design</b></h2>
+            <p>No homero adolescens mei, eum cu decore reformidans, cum erant nonumy dictas ei. Ne vis congue gloriatur vel eu.</p>
+            <button>read more</button>
+      </div>
+
+
     </div>
 
 
@@ -164,7 +186,7 @@ img{
     }
   }
 
-  img {
+  .img {
     width: 100%;
   }
 
@@ -206,44 +228,74 @@ img{
   width: 50%;
   text-align: center;
   margin: 20px;
+ 
+
 }
 
 button{
   color: black;
-  border-bottom: rgb(208, 70, 93);
+  border-bottom: 2px solid #e1c0b0;
 }
 
-.carusel{
-  width: 100%;
+
+// CAROSELLO
+.contenitore-carusel{
   display: flex;
   justify-content: center;
+  .carusel{
+    width: 80%;
+
+  }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    background-color: pink; 
-    border-radius: 50%;
+  background-color: pink; 
+  border-radius: 50%;
   }
-
   .carousel-control-prev, .carousel-control-next {
     color: black; 
     
   }
+
 }
-.carusel img {
-  height: 400px; 
+
+
+
+
+// contenitore finle
+.container-finale{
   width: 100%;
+  display: flex;
+}
+.img-ds-ultimo{
+  width: 50%;
+  margin: 50px;
 }
 
-.carusel .carousel-item {
-  transition: transform 0.6s; 
+.design-carattetere-dx{
+  width: 50%;
+  text-align: left;
+  margin: 50px;
+
+    button{
+      border: 2px solid #e1c0b0;
+      color: black;
+      width: 200px;
+      height: 60px;
+      font-family: 'Mulish', sans-serif;
+      
+    }
+    button:hover{
+      background-color: #e1c0b0;
+      color: white;
+    }
+  
+ 
 }
 
 
-.carusel .carousel-item.active {
-  transform: scale(1);
-}
 
 </style>
 
-<!-- https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain
+https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain
 https://th.bing.com/th/id/R.5df3def5983dcf991fe66343d24adea3?rik=aoCoVXeS5Rf5DA&pid=ImgRaw&r=0
-https://th.bing.com/th/id/R.881f91b8b073b0eb472b4afe0711fd29?rik=M9SuBfCfvy6qkg&pid=ImgRaw&r=0 -->
+https://th.bing.com/th/id/R.881f91b8b073b0eb472b4afe0711fd29?rik=M9SuBfCfvy6qkg&pid=ImgRaw&r=0
