@@ -149,9 +149,7 @@ export default {
               v-for="image in slide.images"
               :key="image"
               v-bind:src="`/img/${image}`"
-              :class="{{"
-              slides.firstslide
-              }}
+              :class="slides.firstslide"
               alt="..."
             />
           </div>
