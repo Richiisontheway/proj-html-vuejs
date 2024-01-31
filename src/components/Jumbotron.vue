@@ -144,13 +144,13 @@ export default {
               {{ slide.button.text }}</a
             >
           </div>
-          <div class="images_container carousel-item active">
+          <div class="images_container carousel-item">
             <img
-              v-for="image in slide.images"
+              v-for="(image, index) in slide.images"
               :key="image"
               v-bind:src="`/img/${image}`"
-              :class="slides.firstslide"
-              alt="..."
+              :class="'dimension' + (index + 1)"
+              alt=""
             />
           </div>
         </div>
@@ -255,70 +255,70 @@ export default {
     img {
       object-fit: contain;
     }
-    .image1 {
+    .dimension1 {
       position: absolute;
       left: 93px;
       top: 74px;
       object-fit: scale-down;
       max-width: 399px;
     }
-    .image2 {
+    .dimension2 {
       width: 45px;
       height: 46px;
       position: absolute;
       left: 46px;
       top: 190px;
     }
-    .image3 {
+    .dimension3 {
       width: 107px;
       height: 89px;
       position: absolute;
       left: -26px;
       bottom: 73px;
     }
-    .image4 {
+    .dimension4 {
       width: 40px;
       height: 60px;
       position: absolute;
       left: 102px;
       bottom: 70px;
     }
-    .image5 {
+    .dimension5 {
       width: 40px;
       height: 60px;
       position: absolute;
       right: 209px;
       bottom: 76px;
     }
-    .image6 {
+    .dimension6 {
       width: 66px;
       height: 141px;
       position: absolute;
       right: 130px;
       bottom: 76px;
     }
-    .image7 {
+    .dimension7 {
       width: 39px;
       height: 38px;
       position: absolute;
       right: 91px;
       bottom: 70px;
     }
-    .image8 {
+    .dimension8 {
       width: 38px;
       height: 42px;
       position: absolute;
       right: 177px;
       top: 199px;
     }
-    .image9 {
+    .dimension9 {
       width: 113px;
       height: 53px;
       position: absolute;
       right: 103px;
       top: 106px;
     }
-    .image10 {
+    .dimension10 {
       width: 92px;
       height: 44px;
       position: absolute;
