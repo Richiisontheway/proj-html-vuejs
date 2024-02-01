@@ -31,15 +31,16 @@ export default {
                             HOME
                         </a>
                         <div class="illustration--dropdown_content">
-                                <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
-                                    
+                            <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
+                                <div v-if="(homeKey.page == 'Main Home')">
+                                    <router-link :to="{ name: 'home'}">
+                                        {{ homeKey.page }}
+                                    </router-link>
+                                </div>
+                                <div v-else>
                                     {{ homeKey.page }}
-                                    <div v-if="(homeKey.page == 'Main Home')">
-                                        <!-- <router-link :to="{ name: 'user', params: { username: 'erina' }}">
-                                            user
-                                        </router-link> -->
-                                    </div>
-                                </a>
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <li class="illustration--dropdown">
@@ -49,7 +50,19 @@ export default {
                         </a>
                         <div class="illustration--dropdown_content row ">
                             <a href="#" class="illustration--pages_hover col " v-for="(pageKey,b) in store.page_nav" :key="b">
-                                {{ pageKey.page }}
+                                <div v-if="(pageKey.page == 'What We Offer')">
+                                    <router-link :to="{ name: 'whatWeOffer'}">
+                                        {{ pageKey.page }}
+                                    </router-link>
+                                </div>
+                                <div v-else-if="(pageKey.page == 'Our Team')">
+                                    <router-link :to="{ name: 'ourTeam'}">
+                                        {{ pageKey.page }}
+                                    </router-link>
+                                </div>
+                                <div v-else>
+                                    {{ pageKey.page }}
+                                </div>
                             </a>
                         </div>
 
@@ -112,11 +125,12 @@ export default {
                         <div class="illustration--dropdown_content">
                             <a href="#" class="illustration--shop w-100" v-for="(shopKey,g) in store.shop_nav" :key="g">
                                 {{ shopKey.page }}
-                                <ul v-if="(shopKey.page == 'Shop Pages')" class="illustration--shop d-block ">
+                                <ul v-if="(shopKey.page == 'Shop Pages')" class="illustration--second_dropdown">
                                     <li v-for="(elem) in shopKey.dropstart">
-                                        {{ elem.dropstart }}
+                                        {{ elem.layout }}
                                     </li>
                                 </ul>
+
                             </a>
                         </div>
                     </li>
@@ -125,7 +139,7 @@ export default {
                             ELEMENTS
                         </a>
                         <div class="special_content_element">
-                            <div class="mx-3">
+                            <div class="mx-3 col-2">
                                 <h3>
                                     {{ this.store.element_nav[0].title }}
                                 </h3>
@@ -133,7 +147,7 @@ export default {
                                     {{ elementKey.page }}
                                 </a>
                             </div>
-                            <div class="mx-3">
+                            <div class="mx-3 col-2">
                                 <h3>
                                     {{ this.store.element_nav[1].title }}
                                 </h3>
@@ -141,7 +155,7 @@ export default {
                                     {{ elementKey.page }}
                                 </a>
                             </div>
-                            <div class="mx-3">
+                            <div class="mx-3 col-2">
                                 <h3>
                                     {{ this.store.element_nav[2].title }}
                                 </h3>
@@ -149,7 +163,7 @@ export default {
                                     {{ elementKey.page }}
                                 </a>
                             </div>
-                            <div class="mx-3">
+                            <div class="mx-3 col-2">
                                 <h3>
                                     {{ this.store.element_nav[3].title }}
                                 </h3>

@@ -217,7 +217,6 @@ export const store = reactive({
                 },{
                     layout:'Checkout'
                 }
-
             ]
         }
     ],
