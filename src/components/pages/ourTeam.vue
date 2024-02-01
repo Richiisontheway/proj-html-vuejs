@@ -1,6 +1,5 @@
 <script>
 import { store } from '../../store.js';
-
 export default {
   data() {
     return {
@@ -98,13 +97,13 @@ export default {
                 <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-           <img src="C:\Users\stefa\classe 114 boolean\proj-html-vuejs-1\public\img\img-akiko-dimensioni.jpg" alt="">
+           <img src="../../../public/img/img-lara-dimensione.jpg" alt="">
           </div>
           <div class="carousel-item">
-           <img src="C:\Users\stefa\classe 114 boolean\proj-html-vuejs-1\public\img\img-mark beaver-dimensione.jpg" alt="">
+           <img src="../../../public/img/img-akiko-dimensioni.jpg" alt="">
           </div>
           <div class="carousel-item">
-            <img src="C:\Users\stefa\classe 114 boolean\proj-html-vuejs-1\public\img\img-lara-dimensione.jpg" alt="">
+            <img src="../../../public/img/img-mark beaver-dimensione.jpg" alt="">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
