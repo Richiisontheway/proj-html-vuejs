@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="sticky-top">
         <nav class="mx-4">
             <div>
                 <img src="/public/img/logo-sidearea-1.png" alt="Marée">
