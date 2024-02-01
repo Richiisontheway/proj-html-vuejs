@@ -56,7 +56,7 @@ export default {
   
   .container {
     width: 100%;
-    height: 200px;
+    height: 400px;
     text-align: center;
     display: inline;
     text-align: left;
