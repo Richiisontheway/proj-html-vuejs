@@ -93,12 +93,12 @@ ul{
         display: none;
         position: absolute;
         top: 105px;
-        left: -57vw;
+        left: -55vw;
         width: 100vw;
         background-color: rgba($color: #FAF7F2, $alpha: 1);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 10px 15px;
-        z-index: 2;
+        z-index: 1;
         
     }
     &:hover .special_content{
@@ -108,7 +108,7 @@ ul{
         display: none;
         position: absolute;
         top: 105px;
-        left: -84vw;
+        left: -83vw;
         width: 100vw;
         background-color: rgba($color: #FAF7F2, $alpha: 1);
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -120,12 +120,12 @@ ul{
     }
 }
 
-.illustration--second_dropdown{
-    display: none;
-    position: absolute;
-    background-color: red;
+// .illustration--second_dropdown{
+//     display: none;
+//     position: absolute;
+//     background-color: red;
 
-    &:hover{
-        display: block ;
-    }
-}
+//     &:hover{
+//         display: block ;
+//     }
+// }
