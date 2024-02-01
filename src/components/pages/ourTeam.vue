@@ -192,7 +192,6 @@ img{
   .visible {
     
     box-sizing: border-box; 
-    border: 1px solid black;
     width: 25%;
     min-height: 300px;
     font-family: 'Mulish', sans-serif;
