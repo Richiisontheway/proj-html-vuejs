@@ -72,7 +72,7 @@ export default {
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              3D MODEL
+              3D MODELING
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -83,7 +83,7 @@ export default {
       </div>
 
       <div class="contenitore-dx">
-        <h1>Vibes loving intro</h1>
+        <h1>Vibes loving <span><b><em>intro</em></b></span></h1>
         <p>No homero adolescens mei, eum cu decore reformidans, cum erant nonumy dictas ei. Ne vis congue gloriatur, vel eu doming philosophia. Qui quem munere ad, et agam copiosae nam. Ei reque verear periculis eam. Has commune constituam eu, ex vis.</p>
 
       </div>
@@ -130,9 +130,9 @@ export default {
 
 
       <div class="design-carattetere-dx">
-            <h2>Character<br><b>design</b></h2>
-            <p>No homero adolescens mei, eum cu decore reformidans, cum erant nonumy dictas ei. Ne vis congue gloriatur vel eu.</p>
-            <button>read more</button>
+            <h2>Character<br><b><em>design</em></b></h2>
+            <p>No homero adolescens mei, eum cu decore <br> reformidans, cum erant nonumy dictas ei. Ne vis <br> congue gloriatur vel eu.</p>
+            <button>READ MORE</button>
       </div>
 
 
@@ -192,9 +192,9 @@ img{
   .visible {
     
     box-sizing: border-box; 
-    border: 1px solid black;
     width: 25%;
     min-height: 300px;
+    font-family: 'Mulish', sans-serif;
     position: relative; 
     overflow: hidden;
     &:hover {
@@ -216,17 +216,39 @@ img{
   width: 100%;
   margin: 50px;
   margin-top: 100px;
+  font-family: 'Mulish', sans-serif;
   display: flex;
 }
 .contenitore-sx{
   width: 50%;
   margin: 20px;
+  font-family: 'Mulish', sans-serif;
   
 }
 .contenitore-dx{
   width: 50%;
   text-align: center;
+  position: relative;
+  top: 50px;
   margin: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: 400;
+  margin: 15px 0;
+  -ms-word-wrap: break-word;
+    word-wrap: break-word;
+ 
+
+  h1{
+    font-size: 50px;
+    line-height: 1.24em;
+    font-family: Muli,sans-serif;
+    
+  }
+  p{
+    color: gray;
+    
+  }
  
 
 }
@@ -241,8 +263,11 @@ button{
 .contenitore-carusel{
   display: flex;
   justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
   .carusel{
-    width: 80%;
+    width: 60%;
+    height: 250px;
 
   }
   .carousel-control-prev-icon,
@@ -274,13 +299,28 @@ button{
   width: 50%;
   text-align: left;
   margin: 50px;
+  position: relative;
+  top: 50px;
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: 400;
+  margin: 15px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  h2{
+    font-size: 50px;
+    line-height: 1.24em;
+  }
+  
 
     button{
       border: 2px solid #e1c0b0;
       color: black;
       width: 200px;
       height: 60px;
-      font-family: 'Mulish', sans-serif;
+     
+      margin-top: 10px;
+      background-color: white;
       
     }
     button:hover{
@@ -290,11 +330,11 @@ button{
   
  
 }
-
+em{
+  font-family: 'Playfair Display', serif !important;
+}
 
 
 </style>
 
-https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain
-https://th.bing.com/th/id/R.5df3def5983dcf991fe66343d24adea3?rik=aoCoVXeS5Rf5DA&pid=ImgRaw&r=0
-https://th.bing.com/th/id/R.881f91b8b073b0eb472b4afe0711fd29?rik=M9SuBfCfvy6qkg&pid=ImgRaw&r=0
+
