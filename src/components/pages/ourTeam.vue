@@ -1,6 +1,5 @@
 <script>
 import { store } from '../../store.js';
-
 export default {
   data() {
     return {
@@ -98,13 +97,13 @@ export default {
                 <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-           <img src="https://th.bing.com/th/id/OIP.Q7jvX9XQRvjNL9A3X0c1RwHaFP?rs=1&pid=ImgDetMain" alt="">
+           <img src="../../../public/img/img-lara-dimensione.jpg" alt="">
           </div>
           <div class="carousel-item">
-           <img src="https://th.bing.com/th/id/OIP.cVNthsSPB5wAGwuNN5hTvgHaFP?rs=1&pid=ImgDetMain" alt="">
+           <img src="../../../public/img/img-akiko-dimensioni.jpg" alt="">
           </div>
           <div class="carousel-item">
-            <img src="https://pianetabambini.it/wp-content/uploads/2013/12/Buon-Natale_15.jpg" alt="">
+            <img src="../../../public/img/img-mark beaver-dimensione.jpg" alt="">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

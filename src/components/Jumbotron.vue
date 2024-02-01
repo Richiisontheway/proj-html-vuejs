@@ -105,26 +105,13 @@ export default {
     <div id="carousel" class="carousel-slide">
       <div class="carousel-indicators">
         <button
+          v-for="(slide, index) in slides"
+          :key="index"
+          :class="currentSlide == index ? 'active ' : ''"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="button_indicator active"
+          class="button_indicator"
           aria-current="true"
           aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-          class="button_indicator"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-          class="button_indicator"
         ></button>
       </div>
       <div class="slides">
@@ -137,6 +124,7 @@ export default {
           <div class="text-container">
             <h1 class="title">
               {{ slide.title }}
+              ciao
               <span class="special-font">{{ slide.italic }}</span>
             </h1>
             <h3 class="description">
@@ -185,6 +173,12 @@ export default {
   align-items: center;
   background-color: white;
   position: relative;
+  .carousel-indicator {
+    display: none;
+    .carousel-indicator.active {
+      display: flex;
+    }
+  }
   .slides {
     width: 100%;
     height: 100%;
@@ -250,10 +244,16 @@ export default {
     }
   }
   .button_indicator {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
+    border: none;
     background-color: #e1c0b0;
+    margin-left: 15px;
+    &.active {
+      width: 15px;
+      height: 15px;
+    }
   }
 
   .images_container {
