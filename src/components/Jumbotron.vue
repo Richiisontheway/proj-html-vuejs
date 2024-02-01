@@ -124,6 +124,7 @@ export default {
           <div class="text-container">
             <h1 class="title">
               {{ slide.title }}
+              ciao
               <span class="special-font">{{ slide.italic }}</span>
             </h1>
             <h3 class="description">
