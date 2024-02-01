@@ -107,11 +107,10 @@ export default {
         <button
           v-for="(slide, index) in slides"
           :key="index"
-          :class="currentSlide == index ? 'active ' : ''"
+          :class="currentSlide == index ? ' indicator_active ' : ''"
           type="button"
           class="button_indicator"
           aria-current="true"
-          aria-label="Slide 1"
         ></button>
       </div>
       <div class="slides">
@@ -249,7 +248,7 @@ export default {
     border: none;
     background-color: #e1c0b0;
     margin-left: 15px;
-    &.active {
+    &.indicator_active {
       width: 15px;
       height: 15px;
     }
