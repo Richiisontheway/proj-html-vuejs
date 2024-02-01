@@ -33,14 +33,12 @@ export default {
                         <div class="illustration--dropdown_content">
                                 <a href="#" class="illustration--home" v-for="(homeKey, a) in store.home_nav" :key="a">
                                     
-                                        {{ homeKey.page }}
-                                        <div v-if="(homeKey.page == 'Main Home')">
-                                            <!-- <router-link :to="{ name: 'user', params: { username: 'erina' }}">
-                                                user
+                                    {{ homeKey.page }}
+                                    <div v-if="(homeKey.page == 'Main Home')">
+                                        <!-- <router-link :to="{ name: 'user', params: { username: 'erina' }}">
+                                            user
                                         </router-link> -->
-                                        </div>
-                                    
-                                    <!--  -->
+                                    </div>
                                 </a>
                         </div>
                     </li>
