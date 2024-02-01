@@ -3,26 +3,47 @@ import { store } from '../store';
 export default {
     data() {
         return {
-        store,
+            store,
+            isActive1: false,
+            isActive2: true,
+            isActive3: true
         };
     },
     methods: {
         change_active_text(){
-            console.log('ciao');
-            
+            this.isActive1 == true ? this.isActive1 = false : this.isActive1 = true
+            if(this.isActive2 == true){
+                this.isActive2 = false
+            }
+            if (this.isActive3 == true) {
+                this.isActive3 = false
+            }
+            //console.log(this.change_active_text)
         },
         change_active_text2(){
-            console.log('ciao2')
+            this.isActive2 == true ? this.isActive2 = false : this.isActive2 = true
+            if(this.isActive1 == true){
+                this.isActive1 = false
+            }
+            if (this.isActive3 == true) {
+                this.isActive3 = false
+            }
+            //console.log('ciao2')
         },
         change_active_text3(){
-            console.log('ciao3')
+            this.isActive3 == true ? this.isActive3 = false : this.isActive3 = true
+            if(this.isActive1 == true){
+                this.isActive1 = false
+            }
+            if (this.isActive2 == true) {
+                this.isActive2 = false
+            }
+            //console.log('ciao3')
         }
     },
-    updated(){
+    mounted(){
         this.change_active_text();
-        this.change_active_text2();
-        this.change_active_text3();
-    }
+    },
 };
 </script>
 <template>
@@ -36,36 +57,31 @@ export default {
             </div>
             <div class="col">
                 <ul class="illustration--list_special">
-                    <li @click="change_active_text()">
+                    <li @click.prevent="change_active_text()">
                         <a href="#">
                             animation
                         </a>
                     </li>
-                    <li @click="change_active_text2()">
+                    <li @click.prevent="change_active_text2()">
                         <a href="#">
                             design
                         </a>
                     </li>
-                    <li @click="change_active_text3()">
+                    <li @click.prevent="change_active_text3()">
                         <a href="#">
                             lettering
                         </a>
                     </li>
                 </ul>
-                <div v-if="change_active_text == true">
-                    <div>
-                        lorem
-                    </div>
+                <div class="line-under"></div>
+                <div :class="{'d-block': isActive1, 'd-none':isActive1 == false}">
+                    Hinc assum pro ea. Meis verear an vel, ex quando legere scriptorem has, mea vide vidisse an. Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te. Ex mei illud illum laudem, quem bonorum ius ne. His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea vix propriae deseruisse. Munere utamur vertere.
                 </div>
-                <div v-else-if="change_active_text2 == true">
-                    <div>
-                        ciao
-                    </div>
+                <div :class="{'d-block': isActive2, 'd-none':isActive2 == false}">
+                    Integre appareat cu mea, te mel ferri percipitur efficiendi, in ius phaedrum invenire expetendis. Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te. Ex mei illud illum laudem, quem bonorum ius ne. His an omnes propriae fabellas, an duo aeterno expetenda explicari, ea vix propriae deseruisse. Inani expetendis ut cum.
                 </div>
-                <div v-else-if="change_active_text3 == true">
-                    <div>
-                        helo
-                    </div>
+                <div :class="{'d-block': isActive3, 'd-none':isActive3 == false}">
+                    Te sale iusto fabellas sed, eu sea tollit suscipiantur. Oblique omnesque ne eum, id putent malorum admodum vel, vix no tantas admodum nominavi. Eius eirmod vel in, quo simul salutatus incorrupte ex, nisl nonumes democritum per te. Ex mei illud illum laudem, quem bonorum ius ne. His an omnes propriae fabellas, an duo aeterno expetend.
                 </div>
             </div>
         </div>
@@ -134,6 +150,7 @@ export default {
     </div>
 </template>
 <style lang="scss">
+
 .illustration--img_container{
     height: 400px;
     width: 500px;
@@ -155,11 +172,19 @@ export default {
         //border-bottom: 4px solid rgba($color: lightgrey, $alpha: 0.5);
         
         a{
-        text-decoration: none;
-        color: black;
+            text-decoration: none;
+            color: black;
         }
-
+        
     }
+}
+.active{
+    display: none;
+}
+.line-under{
+    padding: 1px 0;
+    background-color: lightblue;
+    margin-bottom: 10px;
 }
 .illustration--bar{
     padding-left: 0;
