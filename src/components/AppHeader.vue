@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="sticky-top">
         <nav class="mx-4">
             <div>
                 <img src="/public/img/logo-sidearea-1.png" alt="Marée">
@@ -125,11 +125,11 @@ export default {
                         <div class="illustration--dropdown_content">
                             <a href="#" class="illustration--shop w-100" v-for="(shopKey,g) in store.shop_nav" :key="g">
                                 {{ shopKey.page }}
-                                <ul v-if="(shopKey.page == 'Shop Pages')" class="illustration--second_dropdown">
+                                <!-- <ul v-if="(shopKey.page == 'Shop Pages')" class="illustration--second_dropdown">
                                     <li v-for="(elem) in shopKey.dropstart">
                                         {{ elem.layout }}
                                     </li>
-                                </ul>
+                                </ul> -->
 
                             </a>
                         </div>
@@ -186,6 +186,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/scss/header.scss" as *;
+@use "../assets/scss/main.scss" as *;
 @import "../assets/scss/partials/reset";
 
 </style>

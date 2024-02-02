@@ -23,7 +23,7 @@ export default {
         <div class="illustration--jumbotron">
             <!-- <img src="../../public/img/h-2-background-1.jpg" alt=""> -->
             <h2>
-                What we Offer
+                What we <span>Offer</span>
             </h2>
         </div>
     </section>
@@ -48,6 +48,13 @@ export default {
     justify-content: center;
     h2{
         color: black;
+        font-size: 50px;
+    }
+    
+    span{
+        font-family: 'Playfair Display', serif !important;
+        font-style: italic;
+        font-weight: bold;
     }
 }
 </style>

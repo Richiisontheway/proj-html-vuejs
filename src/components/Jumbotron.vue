@@ -181,10 +181,16 @@ export default {
     width: 100%;
     height: 100%;
     .carousel-inner {
-      display: none;
+      display: flex;
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
     }
     .carousel-inner.active {
-      display: flex;
+      opacity: 1;
+      position: static;
+      pointer-events: all;
+      transition: opacity 0.5s ease-out;
     }
     .text-container {
       display: flex;
@@ -265,182 +271,267 @@ export default {
       object-fit: contain;
     }
   }
+}
 
-  .firstslide {
-    .dimension1 {
-      position: absolute;
-      left: 93px;
-      top: 74px;
-      object-fit: scale-down;
-      max-width: 399px;
-    }
-    .dimension2 {
-      width: 45px;
-      height: 46px;
-      position: absolute;
-      left: 46px;
-      top: 190px;
-    }
-    .dimension3 {
-      width: 107px;
-      height: 89px;
-      position: absolute;
-      left: -26px;
-      bottom: 73px;
-    }
-    .dimension4 {
-      width: 40px;
-      height: 60px;
-      position: absolute;
-      left: 102px;
-      bottom: 70px;
-    }
-    .dimension5 {
-      width: 40px;
-      height: 60px;
-      position: absolute;
-      right: 209px;
-      bottom: 76px;
-    }
-    .dimension6 {
-      width: 66px;
-      height: 141px;
-      position: absolute;
-      right: 130px;
-      bottom: 76px;
-    }
-    .dimension7 {
-      width: 39px;
-      height: 38px;
-      position: absolute;
-      right: 91px;
-      bottom: 70px;
-    }
-    .dimension8 {
-      width: 38px;
-      height: 42px;
-      position: absolute;
-      right: 177px;
-      top: 199px;
-    }
-    .dimension9 {
-      width: 113px;
-      height: 53px;
-      position: absolute;
-      right: 103px;
-      top: 106px;
-    }
+.firstslide,
+.secondslide,
+.thirdslide {
+  .dimension1,
+  .dimension2,
+  .dimension3,
+  .dimension4,
+  .dimension5,
+  .dimension6,
+  .dimension7,
+  .dimension8,
+  .dimension9,
+  .dimension10 {
+    transition: all 1s ease;
+  }
+
+  &.active {
+    .dimension1,
+    .dimension2,
+    .dimension3,
+    .dimension4,
+    .dimension5,
+    .dimension6,
+    .dimension7,
+    .dimension8,
+    .dimension9,
     .dimension10 {
-      width: 92px;
-      height: 44px;
-      position: absolute;
-      right: 156px;
-      top: 116px;
-    }
-  }
-  .secondslide {
-    .dimension1 {
-      width: 590px;
-      height: 491px;
-      position: absolute;
-      top: 3px;
-      left: -48px;
-    }
-    .dimension2 {
-      width: 40px;
-      height: 41px;
-      position: absolute;
-      top: 119px;
-      left: -65px;
-    }
-    .dimension3 {
-      width: 40px;
-      height: 61px;
-      position: absolute;
-      top: 30px;
-      right: 229px;
-    }
-    .dimension4 {
-      width: 39px;
-      height: 38px;
-      position: absolute;
-      bottom: 98px;
-      left: -73px;
-    }
-    .dimension5 {
-      width: 40px;
-      height: 60px;
-      position: absolute;
-      bottom: 68px;
-      left: -2px;
-    }
-    .dimension6 {
-      width: 40px;
-      height: 60px;
-      position: absolute;
-      bottom: 42px;
-      right: 238px;
-    }
-  }
-  .thirdslide {
-    .dimension1 {
-      width: 300px;
-      height: 373px;
-      position: absolute;
-      top: 89px;
-      left: 23px;
-    }
-    .dimension2 {
-      width: 305px;
-      height: 481px;
-      position: absolute;
-      top: 23px;
-      left: 294px;
-    }
-    .dimension3 {
-      width: 40px;
-      height: 41px;
-      position: absolute;
-      top: 52px;
-      left: 23px;
-    }
-    .dimension4 {
-      width: 40px;
-      height: 123px;
-      position: absolute;
-      top: 47px;
-      right: 167px;
-    }
-    .dimension5 {
-      width: 39px;
-      height: 38px;
-      position: absolute;
-      bottom: 153px;
-      left: -43px;
-    }
-    .dimension6 {
-      width: 38px;
-      height: 58px;
-      position: absolute;
-      bottom: 50px;
-      left: 36px;
-    }
-    .dimension7 {
-      width: 40px;
-      height: 43px;
-      position: absolute;
-      top: 5px;
-      right: 196px;
-    }
-    .dimension8 {
-      width: 47px;
-      height: 71px;
-      position: absolute;
-      bottom: 49px;
-      right: 128px;
+      translate: 0;
+      rotate: 0deg;
     }
   }
 }
+
+.firstslide {
+  .dimension1 {
+    position: absolute;
+    left: 93px;
+    top: 74px;
+    object-fit: scale-down;
+    max-width: 399px;
+    translate: -14px 50px;
+    rotate: 0deg;
+  }
+  .dimension2 {
+    width: 45px;
+    height: 46px;
+    position: absolute;
+    left: 46px;
+    top: 190px;
+    translate: -24px -154px;
+    rotate: 360deg;
+  }
+  .dimension3 {
+    width: 107px;
+    height: 89px;
+    position: absolute;
+    left: -26px;
+    bottom: 73px;
+    translate: -14px 50px;
+    rotate: -30deg;
+  }
+  .dimension4 {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    left: 102px;
+    bottom: 70px;
+    translate: -149px 50px;
+    rotate: -30deg;
+  }
+  .dimension5 {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    right: 209px;
+    bottom: 76px;
+    translate: -14px 50px;
+    rotate: 50deg;
+  }
+  .dimension6 {
+    width: 66px;
+    height: 141px;
+    position: absolute;
+    right: 130px;
+    bottom: 76px;
+    translate: -14px 50px;
+    rotate: 0deg;
+  }
+  .dimension7 {
+    width: 39px;
+    height: 38px;
+    position: absolute;
+    right: 91px;
+    bottom: 70px;
+    translate: 167px 6px;
+    rotate: 360deg;
+  }
+  .dimension8 {
+    width: 38px;
+    height: 42px;
+    position: absolute;
+    right: 177px;
+    top: 199px;
+    translate: 167px 6px;
+    rotate: 360deg;
+  }
+  .dimension9 {
+    width: 113px;
+    height: 53px;
+    position: absolute;
+    right: 103px;
+    top: 106px;
+    translate: 169px -1px;
+    rotate: 0deg;
+  }
+  .dimension10 {
+    width: 92px;
+    height: 44px;
+    position: absolute;
+    right: 156px;
+    top: 116px;
+    translate: 169px -1px;
+    rotate: 0deg;
+    transition-delay: 0.2s;
+  }
+}
+.secondslide {
+  .dimension1 {
+    width: 590px;
+    height: 491px;
+    position: absolute;
+    top: 3px;
+    left: -48px;
+    translate: 10px 50px;
+    rotate: 0deg;
+  }
+  .dimension2 {
+    width: 40px;
+    height: 41px;
+    position: absolute;
+    top: 119px;
+    left: -65px;
+    translate: 10px -117px;
+    rotate: 360deg;
+  }
+  .dimension3 {
+    width: 40px;
+    height: 61px;
+    position: absolute;
+    top: 30px;
+    right: 229px;
+    translate: 171px -4px;
+    rotate: 360deg;
+  }
+  .dimension4 {
+    width: 39px;
+    height: 38px;
+    position: absolute;
+    bottom: 98px;
+    left: -73px;
+    translate: -58px -9px;
+    rotate: 0deg;
+  }
+  .dimension5 {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 68px;
+    left: -2px;
+    translate: -4px 135px;
+    rotate: 0deg;
+  }
+  .dimension6 {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 42px;
+    right: 238px;
+    translate: 162px 15px;
+    rotate: 180deg;
+  }
+}
+.thirdslide {
+  .dimension1 {
+    width: 300px;
+    height: 373px;
+    position: absolute;
+    top: 89px;
+    left: 23px;
+    translate: 337px -6px;
+    rotate: 0deg;
+  }
+  .dimension2 {
+    width: 305px;
+    height: 481px;
+    position: absolute;
+    top: 23px;
+    left: 294px;
+    translate: 337px -6px;
+    rotate: 0deg;
+    transition-delay: 0.2s;
+  }
+  .dimension3 {
+    width: 40px;
+    height: 41px;
+    position: absolute;
+    top: 52px;
+    left: 23px;
+    translate: 0px -80px;
+    rotate: 360deg;
+  }
+  .dimension4 {
+    width: 40px;
+    height: 123px;
+    position: absolute;
+    top: 47px;
+    right: 167px;
+    translate: 337px -6px;
+    rotate: 180deg;
+    transition-delay: 0.4s;
+  }
+  .dimension5 {
+    width: 39px;
+    height: 38px;
+    position: absolute;
+    bottom: 153px;
+    left: -43px;
+    translate: -110px 0px;
+    rotate: 180deg;
+  }
+  .dimension6 {
+    width: 38px;
+    height: 58px;
+    position: absolute;
+    bottom: 50px;
+    left: 36px;
+    translate: -110px 0px;
+    rotate: 180deg;
+  }
+  .dimension7 {
+    width: 40px;
+    height: 43px;
+    position: absolute;
+    top: 5px;
+    right: 196px;
+    translate: -150px 0px;
+    rotate: 150deg;
+  }
+  .dimension8 {
+    width: 47px;
+    height: 71px;
+    position: absolute;
+    bottom: 49px;
+    right: 128px;
+    translate: 0px 125px;
+    rotate: 0deg;
+  }
+}
+
 .carousel-control-prev {
   width: 5%;
 }

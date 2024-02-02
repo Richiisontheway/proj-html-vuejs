@@ -236,8 +236,8 @@ img{
   font-weight: 400;
   margin: 15px 0;
   -ms-word-wrap: break-word;
-    word-wrap: break-word;
- 
+  word-wrap: break-word;
+
 
   h1{
     font-size: 50px;
