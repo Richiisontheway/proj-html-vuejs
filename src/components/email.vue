@@ -17,10 +17,12 @@
                 <span>newsletter</span>
             </h4>
             <br>
-            <input type="text" class="w-50 me-4" placeholder="YOUR EMAIL">
-            <button class="illustration--button border-0 text-uppercase ">
-                send
-            </button>
+            <form>
+                <input type="email" class="w-50 me-4" placeholder="YOUR EMAIL">
+                <button class="illustration--button border-0 text-uppercase ">
+                    send
+                </button>
+            </form>
         </div>
     </div>
 </template>
