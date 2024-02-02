@@ -51,11 +51,11 @@ export default {
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseone" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
              RIGENERING
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseFor" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, iste!</div>
           </div>
         </div>
@@ -216,13 +216,13 @@ img{
   width: 100%;
   margin: 50px;
   margin-top: 100px;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Muli', sans-serif;
   display: flex;
 }
 .contenitore-sx{
   width: 50%;
   margin: 20px;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Muli', sans-serif;
   
 }
 .contenitore-dx{
@@ -252,6 +252,8 @@ img{
  
 
 }
+
+
 
 button{
   color: black;

@@ -13,7 +13,7 @@ export default {
 
 <template>
     <footer>
-        <div class="container">
+        <div class="footer-conteiner">
             <div class="logo-group-start">
 
                 <div class="img-logo">
@@ -54,11 +54,9 @@ export default {
     background-color: rgb(192, 225, 197);
   }
   
-  .container {
+  .footer-conteiner {
     width: 100%;
-    height: 400px;
     text-align: center;
-    display: inline;
     text-align: left;
   }
   
@@ -66,6 +64,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    height: 250px;
   }
   
   .img-logo {
@@ -77,7 +76,7 @@ export default {
   .list:hover {
     @include border-special;
     text-align: left;
-    border-bottom: 10px solid pink;
+    border-bottom: 10px solid rgb(243, 212, 210);
   }
 
 
